@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM learning</title>
+</head>
+<body>
+    <div class="bg-black">
+        <h1 id="title" class="heading">Dom learning on chai aur code</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        Eveniet fugiat, iure doloribus neque mollitia quaerat eligendi
+        enim quos voluptatem autem, provident ab ut. Odio voluptas labore eum similique, 
+        reiciendis ipsam.</p>
+    </div>
+
+    <script>
+        document.getElementById('title')
+        //<h1 id=title> sb dega
+        document.getElementById('title'.id)
+        //title
+        document.getElementById('title').class
+        //undefined
+        document.getElementById('title').className
+        //heading
+        document.getElementById('title').getAttribute('id')
+        //title
+        document.getElementById('title').getAttribute('class')
+        //heading
+        document.getElementById('title').setAttribute('class', 'test heading')
+
+        const title = document.getElementById('title')
+        title.style.backgroundColor = "green"
+        title.style.padding = "15px"
+
+        title.textContent
+        // Dom learning on chai aur code
+        // text content ke andar sara ka sara text 
+        title.innerHTML
+        // Dom learning on chai aur code
+        // isme content along with html milega
+
+        title.innerText
+        // Dom learning on chai aur code
+       // text content ke andar agar style display none akr de toh vo sb nahi dikhega
+
+       document.querySelector('h1')
+       // sirf first wala select kar ke dega jisko humlog select karenge
+
+       document.querySelectorAll('h1')
+       //sare h1 tags wale dega
+
+       document.querySelector('.heading')
+
+
+       // ********************nodelist*********************
+
+
+       tempList.style.color = 'green' // will through error
+
+       tempList[0].style.color = 'green'
+    </script>
+</body>
+</html>
